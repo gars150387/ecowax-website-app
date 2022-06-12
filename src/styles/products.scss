@@ -36,6 +36,15 @@
     padding: 5px;
     margin-top: 3px;
 }
+a{
+    text-decoration: none;
+    color: #212529;
+
+    &:hover{
+        text-decoration: none;
+        color: #212529;
+    }
+}
 
 .price-div{
     display: flexbox;

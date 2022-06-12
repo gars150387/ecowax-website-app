@@ -17,10 +17,13 @@ export const ProductOne = () => {
               <p className="card-text">Es un producto ideal para hidratar y restaurar plásticos negros que se van desgastando a través de los rayos solares y el clima. Funciona en el tablero, partes plásticas externas, cojineria de cuero y llantas. da Brillo y protección. no contiene Silicona</p>
               <p className="card-text"><small className="text-muted">Contenido: 300ml</small></p>
             </div>
-            <div className='price-div'>
+            <a target="_blank" rel="noopener noreferrer"  href='https://api.whatsapp.com/send?phone=573245532889'>
+                <div className='price-div'>
               <h3>23.900 COP</h3>
-              <button> Adquire el producto</button>
+              <button>Adquire el producto</button>
             </div>
+            </a>
+          
            
           </div>
         </div>

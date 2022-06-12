@@ -1,16 +1,12 @@
 import React from 'react'
 import { Header } from './components/Header'
 import { Navbar } from './components/Navbar'
-import { ProductOne } from './components/ProductOne'
-import { ProductThree } from './components/ProductThree'
-import { ProductTwo } from './components/ProductTwo'
-import { ProductFour } from './components/ProductFour'
 import { Gallery } from './components/Gallery'
 
-
+// import { CustomersReviews } from './components/CustomersReviews'
+// import { Video } from './components/Video'
+import { Products } from './pages/Products'
 import '../src/styles/home.scss'
-import { CustomersReviews } from './components/CustomersReviews'
-import { Video } from './components/Video'
 
 export const Home = () => {
     return (
@@ -22,12 +18,8 @@ export const Home = () => {
                 <Navbar />
             </div>
             <div className='home-container'>
-                <div className='products'>
-                    <ProductThree />
-                    <ProductTwo />
-                    <ProductOne />
-                    <ProductFour />
-                </div>
+                <Products />
+                
                 <div className='gallery-div'>
                     <h1 className='gallery-title'>Galeria</h1>
                     <Gallery />
