@@ -1,62 +1,61 @@
 import React from "react";
-import { Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import "../styles/navbar.scss";
 
 export const Navbar = () => {
   return (
-    <div className="navbar">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-                     <a className="navbar-brand" >
-              EcoWax
-            </a>
-       
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+<nav className="navbar">
+      <div className="navbar__left">
+        <Link
+          to="home"
+          className="navbar__logo-link"
+          spy={true}
+          smooth={true}
+          // offset={-80}
+          duration={500}
+        >
+          <h1 className="navbar__logo">EcoWax</h1>
+        </Link>
+      </div>
+      <ul className="navbar__right">
+        <li className="navbar__about navbar__item">
+          <Link
+            className="navbar__link"
+            to="products"
+            spy={true}
+            smooth={true}
+            // offset={-50}
+            duration={500}
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-               
-                  <a className="nav-link" aria-current="page" >
-                    Productos
-                  </a>
-           
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" >
-                  Catalogo
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" >
-                  Galeria
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" >
-                  Videos
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" >
-                  Testimonios
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
+            Productos
+          </Link>
+        </li>
+
+        <li className="navbar__projects navbar__item">
+          <Link
+            className="navbar__link"
+            to="gallery"
+            spy={true}
+            smooth={true}
+            // offset={0}
+            duration={500}
+          >
+            Galeria
+          </Link>
+        </li>
+        <li className="navbar__contact navbar__item">
+          <Link
+            className="navbar__link"
+            to="video"
+            spy={true}
+            smooth={true}
+            // offset={-80}
+            duration={500}
+          >
+            Videos
+          </Link>
+        </li>
+      </ul>
+    </nav>  );
 };
