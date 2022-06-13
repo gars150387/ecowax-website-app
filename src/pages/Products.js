@@ -8,11 +8,14 @@ import '../styles/home.scss'
 
 export const Products = () => {
   return (
-    <div className="products">
+    <div className='home-container'>
+        <div className="products">
       <ProductThree />
       <ProductTwo />
       <ProductOne />
       <ProductFour />
     </div>
+</div>
+
   );
 };
