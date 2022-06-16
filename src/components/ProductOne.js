@@ -21,9 +21,7 @@ export const ProductOne = () => {
               <h3>23.900 COP</h3>
               <button>Adquire el producto</button>
             </div>
-            </a>
-          
-           
+            </a>          
           </div>
         </div>
       </div>
