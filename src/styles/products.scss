@@ -1,162 +1,158 @@
-.card-container{
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.card {
+  width: 65vw;
+  height: 50vh;
+}
+#div-img-product {
+  display: flex;
+  justify-content: center;
+  width: 15vw;
+  height: 45vh;
+  margin: 2% auto;
+}
+#div-img-product img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: right;
+  object-fit: fill;
+  object-position: center;
+}
+.card-title {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  text-decoration: underline;
+}
+.card-text {
+  text-align: justify;
+  font-family: "Libre Baskerville", serif;
+  padding: 5px;
+  margin-top: 3px;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+
+  &:hover {
+    text-decoration: none;
+    color: #212529;
+  }
+}
+
+.price-div {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+
+  button {
+    background-color: #077c16;
+    border-radius: 10px;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
-}
-.card{
-    width: 65vw;
-    height: 50vh;
-}
-#div-img-product{
+  }
+  .card {
+    width: 90%;
+    height: 80%;
+  }
+
+  // #root > div:nth-child(2) > div.home-container > div > div:nth-child(even) > div > div{
+  //     #div-img-product{
+  //         display: flex;
+  //         justify-content: center;
+  //         width: 80%;
+  //         height: 100%;
+  //         margin: 2% auto;
+
+  //     }
+  //     #div-img-product img {
+  //         width: 100%;
+  //         height: 100%;
+  //         display: flex;
+  //         justify-items: right;
+  //         object-fit: fill;
+  //         object-position: center;
+  //     }
+  //     .card-title{
+  //         font-size: 50px;
+  //         text-align: center;
+  //         font-family:'Libre Baskerville', serif;
+  //         text-decoration: underline;
+  //     }
+
+  // }
+
+  #div-img-product {
     display: flex;
     justify-content: center;
-    width: 15vw;
-    height: 45vh;
+    width: 80%;
+    height: 100%;
     margin: 2% auto;
-
-}
-#div-img-product img {
+  }
+  #div-img-product img {
     width: 100%;
     height: 100%;
     display: flex;
     justify-items: right;
     object-fit: fill;
     object-position: center;
-}
-.card-title{
+  }
+  .card-title {
     font-size: 50px;
     text-align: center;
-    font-family:'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     text-decoration: underline;
-}
-.card-text{
+  }
+  .card-text {
     text-align: justify;
-    font-family:'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     padding: 5px;
     margin-top: 3px;
-}
-a{
+  }
+  a {
     text-decoration: none;
     color: #212529;
 
-    &:hover{
-        text-decoration: none;
-        color: #212529;
+    &:hover {
+      text-decoration: none;
+      color: #212529;
     }
-}
+  }
 
-.price-div{
+  .price-div {
     display: flexbox;
     justify-content: center;
     align-items: center;
     margin: 3%;
 
-    button{
-        background-color: #077c16;
-        border-radius: 10px;
-        transition: all .4s;
+    button {
+      background-color: #077c16;
+      border-radius: 10px;
+      transition: all 0.4s;
 
-        &:hover{
-            transform: scale(1.1);
-            box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
-        }
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
+      }
     }
-}
-
-
-@media only screen and (max-width: 600px){
-    .card-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2%;
-    }
-    .card{
-        width: 90%;
-        height: 80%;
-    }
-
-    // #root > div:nth-child(2) > div.home-container > div > div:nth-child(even) > div > div{
-    //     #div-img-product{
-    //         display: flex;
-    //         justify-content: center;
-    //         width: 80%;
-    //         height: 100%;
-    //         margin: 2% auto;
-        
-    //     }
-    //     #div-img-product img {
-    //         width: 100%;
-    //         height: 100%;
-    //         display: flex;
-    //         justify-items: right;
-    //         object-fit: fill;
-    //         object-position: center;
-    //     }
-    //     .card-title{
-    //         font-size: 50px;
-    //         text-align: center;
-    //         font-family:'Libre Baskerville', serif;
-    //         text-decoration: underline;
-    //     }
-    
-    // }
-
-
-    #div-img-product{
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        height: 100%;
-        margin: 2% auto;
-    
-    }
-    #div-img-product img {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-items: right;
-        object-fit: fill;
-        object-position: center;
-    }
-    .card-title{
-        font-size: 50px;
-        text-align: center;
-        font-family:'Libre Baskerville', serif;
-        text-decoration: underline;
-    }
-    .card-text{
-        text-align: justify;
-        font-family:'Libre Baskerville', serif;
-        padding: 5px;
-        margin-top: 3px;
-    }
-    a{
-        text-decoration: none;
-        color: #212529;
-    
-        &:hover{
-            text-decoration: none;
-            color: #212529;
-        }
-    }
-    
-    .price-div{
-        display: flexbox;
-        justify-content: center;
-        align-items: center;
-        margin: 3%;
-    
-        button{
-            background-color: #077c16;
-            border-radius: 10px;
-            transition: all .4s;
-    
-            &:hover{
-                transform: scale(1.1);
-                box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
-            }
-        }
-    }
+  }
 }
