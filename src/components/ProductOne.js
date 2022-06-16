@@ -1,6 +1,5 @@
 import React from 'react'
 
-import '../images/ecowax-product3.jpeg'
 import '../styles/products.scss'
 
 export const ProductOne = () => {
@@ -9,7 +8,7 @@ export const ProductOne = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div id='div-img-product' className="col-md-4">
-            <img src={require("../images/ecowax-product3.jpeg")} className="img-fluid rounded" alt="" />
+            <img src={require("../images/pics-no-background/ecowax-product3.png")} className="img-fluid rounded" alt="" />
           </div>
           <div className="col-md-8">
             <div className="card-body">

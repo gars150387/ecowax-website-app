@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../images/ecowax-product4.jpg";
 
 export const ProductFour = () => {
   return (
@@ -29,7 +28,7 @@ export const ProductFour = () => {
           </div>
           <div id="div-img-product" className="col-md-4">
             <img
-              src={require("../images/ecowax-product4.jpg")}
+              src={require("../images/pics-no-background/ecowax-product4.png")}
               className="img-fluid rounded"
               alt=""
             />
