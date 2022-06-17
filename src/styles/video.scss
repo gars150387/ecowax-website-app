@@ -1,37 +1,37 @@
-element.style {
-    padding-top: 0%;
+@import "~video-react/styles/scss/video-react";
+
+.video-features{
+    padding-top: 3%;
 }
 
-.video1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0%;
-    -webkit-tap-highlight-color: transparent;
-    box-sizing: border-box;
-    padding-top: 0%;}
+.video-container{
+    width: 55%;
+    margin: 5% auto;
 
-.video2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 0%;
 }
 
-.video3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 0%;
+.video{
+    width: 95%;
+    height: 30%;
+    margin: 0 5px;
 }
 
-.video4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 0%;
+
+@media only screen and (max-width: 600px){
+    .video-features{
+        padding-top: 3%;
+    }
+    
+    .video-container{
+        width: 88%;
+        margin: 5% auto;
+        margin-top: 15%;
+    
+    }
+    
+    .video{
+        width: 95%;
+        height: 30%;
+        margin: 0 5px;
+    }
 }
