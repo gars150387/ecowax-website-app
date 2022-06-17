@@ -7,11 +7,10 @@ import '../styles/video.scss'
 export const Video2 = () => {
     return (
         <div>
-            <div className='video2'>
+            <div className='video'>
                 <Player
                     autoPlay
                     muted
-                    poster="/assets/poster.png"
                     src={require('../video/video2.mp4')}
                 >
                     <ControlBar autoHide={true} className="" />

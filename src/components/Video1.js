@@ -15,13 +15,12 @@ import '../styles/video.scss'
 export const Video1 = () => {
     return (
         <div>
-            <div className='video1'>
+            <div className='video'>
                 <Player
                     autoPlay
                     muted
-                    poster="/assets/poster.png"
                     src={require('../video/video1.mp4')}
-                    style={{ paddingTop: '0%' }}
+                    className="video-features"
                 >
                     <ControlBar disabled className="" >
                         <ReplayControl seconds={10} order={1.1} />
