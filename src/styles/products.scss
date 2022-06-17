@@ -10,7 +10,15 @@
 .card {
   width: 65vw;
   height: 50vh;
+  overflow: hidden;
+  transition: all .5s;
+
+  &:hover .bottom-component{
+    margin-top: 0%;
+    transition: all 0.5s;
+  }
 }
+
 #div-img-product {
   display: flex;
   justify-content: center;
@@ -27,6 +35,7 @@
   object-position: center;
   transform: rotate(1deg);
 }
+
 .card-title {
   font-size: 50px;
   text-align: center;
@@ -50,6 +59,7 @@ a {
   }
 }
 .bottom-component {
+  margin-top: 100%;
   display: flex;
   justify-content: space-evenly;
 }
