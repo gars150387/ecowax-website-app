@@ -27,7 +27,7 @@ export const Navbar = () => {
           offset={-80}
           duration={500}
         >
-          <h1>EcoWax</h1>
+          <h1>Ecowax</h1>
         </Link>
       </div>
       <ul className="navbar__right">

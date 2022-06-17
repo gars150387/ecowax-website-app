@@ -11,8 +11,8 @@
   box-shadow: 0 0 4px 4px #E4E4EC;
 }
 
-.navbar__left {
-  h1 {
+.navbar__left{
+  
     color: #fff;
     font-family: "Edo", sans-serif;
     font-size: 35px;
@@ -20,13 +20,18 @@
     left: 4%;
     margin: auto 5%;
     cursor: pointer;
-  }
+
+    h1{
+      color: #fff;
+    }
+
+
 }
 
 .navbar__right {
   display: inline-flex;
   position: relative;
-  right: 4%;
+  right: 10%;
 
   li::marker {
 

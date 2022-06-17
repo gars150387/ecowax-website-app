@@ -1,9 +1,12 @@
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2%;
+  width: 60%;
+  height: 80%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin: 2% auto;
 }
+
 .card {
   width: 65vw;
   height: 50vh;
@@ -22,18 +25,20 @@
   justify-items: right;
   object-fit: fill;
   object-position: center;
+  transform: rotate(1deg);
 }
 .card-title {
   font-size: 50px;
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  text-decoration: underline;
+  box-shadow: 0 3px 4px 2px;
+  margin-top: 3%;
 }
 .card-text {
   text-align: justify;
   font-family: "Libre Baskerville", serif;
   padding: 5px;
-  margin-top: 3px;
+  margin-top: 4%;
 }
 a {
   text-decoration: none;
@@ -43,6 +48,10 @@ a {
     text-decoration: none;
     color: #212529;
   }
+}
+.bottom-component {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .price-div {
@@ -115,12 +124,13 @@ a {
     justify-items: right;
     object-fit: fill;
     object-position: center;
+    transform: rotate(1deg);
   }
   .card-title {
     font-size: 50px;
     text-align: center;
     font-family: "Libre Baskerville", serif;
-    text-decoration: underline;
+    text-decoration: none;
   }
   .card-text {
     text-align: justify;

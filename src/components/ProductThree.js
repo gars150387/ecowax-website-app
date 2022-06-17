@@ -24,16 +24,20 @@ export const ProductThree = () => {
                 6 a 7 Lavadas una carro particular. Es permitido en conjunto
                 residenciales.
               </p>
-              <p className="card-text">
+              
+            </div>
+            <div className="bottom-component">
+                          <p className="card-text">
                 <small className="text-muted">Contenido: 500ml</small>
               </p>
-            </div>
-            <a target="_blank" rel="noopener noreferrer"  href="https://api.whatsapp.com/send?phone=573245532889">
+              <a target="_blank" rel="noopener noreferrer"  href="https://api.whatsapp.com/send?phone=573245532889">
               <div className="price-div">
                 <h3>39.900 COP</h3>
                 <button>Adquire el producto</button>
               </div>
             </a>
+
+            </div>
           </div>
         </div>
       </div>
