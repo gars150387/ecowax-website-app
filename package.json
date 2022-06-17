@@ -16,6 +16,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.0",
     "sweetalert2": "^11.4.17",
     "video-react": "^0.15.0",
