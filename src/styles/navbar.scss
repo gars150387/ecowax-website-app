@@ -24,9 +24,13 @@
     h1{
       color: #fff;
     }
-
-
 }
+
+.navbar__middle{
+  position: absolute;
+  left: 33%;
+}
+
 
 .navbar__right {
   display: inline-flex;
@@ -50,5 +54,62 @@
     font-size: 40px;
     margin:auto 10px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    background:#4C6731;
+    margin: 0px auto;
+    padding: 0%;
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+    border: solid 2px #212529;
+    box-shadow: 0 0 4px 4px #E4E4EC;
+  }
+  
+  .navbar__left{
+    
+      color: #fff;
+      font-family: "Edo", sans-serif;
+      font-size: 35px;
+      position: absolute;
+      top: 0%;
+      left: 4%;
+      margin: auto 5%;
+      cursor: pointer;
+  
+      h1{
+        color: #fff;
+      }
+  }
+  
+.navbar__middle{
+  position: absolute;
+  top: 60%;
+  left: 25%;
+}
+
+  .navbar__right {
+    display: inline-flex;
+    position: absolute;
+    top: 0%;
+    margin: 5px 0;
+
+    li::marker {
+  
+      color: transparent;
+    }
+
+  
+    .icon{
+      color: #fff;
+      font-size: 30px;
+      margin:auto 10px;
+      cursor: pointer;
+    }
   }
 }
