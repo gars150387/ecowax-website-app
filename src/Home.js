@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import "../src/styles/home.scss";
 import { ScrollUp } from "./hooks/ScrollUp";
 import { Footer } from "./components/Footer";
+import { ModalHome } from "./components/Modal";
 
 export const Home = () => {
   return (
@@ -23,6 +24,9 @@ export const Home = () => {
         <ScrollUp />
 
         <Footer />
+
+
+        <ModalHome />
       </div>
     </>
   );
