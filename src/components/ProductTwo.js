@@ -5,6 +5,14 @@ export const ProductTwo = () => {
     <div className="card-container">
       <div className="card mb-3">
         <div className="row g-0">
+          <div id="div-img-product" className="col-md-4">
+            <img
+              src={require("../images/pics-no-background/ecowax-product2.png")}
+              className="img-fluid rounded"
+              alt=""
+            />
+          </div>
+
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title">Lavado ecológico para MOTOS</h5>
@@ -30,13 +38,6 @@ export const ProductTwo = () => {
                 </div>
               </a>
             </div>
-          </div>
-          <div id="div-img-product" className="col-md-4">
-            <img
-              src={require("../images/pics-no-background/ecowax-product2.png")}
-              className="img-fluid rounded"
-              alt=""
-            />
           </div>
         </div>
       </div>

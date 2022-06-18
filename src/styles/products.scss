@@ -1,53 +1,83 @@
 .card-container {
   width: 60%;
   height: 80%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   margin: 2% auto;
 }
 
 .card {
-  width: 65vw;
+  width: 50%;
   height: 50vh;
   overflow: hidden;
-  transition: all .5s;
+  transition: all 0.5s;
+  margin: 2% auto;
+  border-radius: 0 15px;
 
-  &:hover .bottom-component{
-    margin-top: 0%;
-    transition: all 0.5s;
+  &:hover {
+    width: 100%;
   }
+
+  &:hover .bottom-component {
+    opacity: 1;
+    transition: all 0.4s;
+  }
+
+  &:hover #div-img-product::before{
+    content: '';
+  }
+
 }
 
 #div-img-product {
   display: flex;
   justify-content: center;
-  width: 15vw;
+  width: 18vw;
   height: 45vh;
   margin: 2% auto;
+  background-color: #4C6731;
+  border-radius: 15px;
+
+  &::before {
+    content: "Ecowax";
+    font-size: 50px;
+    font-family: "Edo", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: right;
+  }
+
 }
 #div-img-product img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-items: right;
   object-fit: fill;
   object-position: center;
-  transform: rotate(1deg);
+  transform: rotate(360deg);
 }
 
+
 .card-title {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-family: "Libre Baskerville", serif;
   box-shadow: 0 3px 4px 2px;
   margin-top: 3%;
+  width: 80%;
 }
 .card-text {
   text-align: justify;
   font-family: "Libre Baskerville", serif;
   padding: 5px;
   margin-top: 4%;
+  width: 80%;
+
+  small{
+    display: flex;
+    justify-content: center;
+  }
 }
 a {
   text-decoration: none;
@@ -59,16 +89,22 @@ a {
   }
 }
 .bottom-component {
-  margin-top: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  transition: all 0.4s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
-.price-div {
+.price-div{
   display: flexbox;
   justify-content: center;
   align-items: center;
   margin: 3%;
+  transition: all 0.4s;
+  width: max-content;
 
   button {
     background-color: #077c16;
@@ -77,6 +113,7 @@ a {
 
     &:hover {
       transform: scale(1.1);
+      color: #fff;
       box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
     }
   }
@@ -84,48 +121,52 @@ a {
 
 @media only screen and (max-width: 620px) {
   .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-  }
-  .card {
-    width: 90%;
+    width: 60%;
     height: 80%;
+    margin: 2% auto;
   }
-
-  // #root > div:nth-child(2) > div.home-container > div > div:nth-child(even) > div > div{
-  //     #div-img-product{
-  //         display: flex;
-  //         justify-content: center;
-  //         width: 80%;
-  //         height: 100%;
-  //         margin: 2% auto;
-
-  //     }
-  //     #div-img-product img {
-  //         width: 100%;
-  //         height: 100%;
-  //         display: flex;
-  //         justify-items: right;
-  //         object-fit: fill;
-  //         object-position: center;
-  //     }
-  //     .card-title{
-  //         font-size: 50px;
-  //         text-align: center;
-  //         font-family:'Libre Baskerville', serif;
-  //         text-decoration: underline;
-  //     }
-
-  // }
-
+  
+  .card {
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin: 2% auto;
+    border-radius: 0 15px;
+  
+    &:hover {
+      width: 100%;
+    }
+  
+    &:hover .bottom-component {
+      opacity: 1;
+      transition: all 0.4s;
+    }
+  
+    &:hover #div-img-product::before{
+      content: '';
+    }
+  
+  }
+  
   #div-img-product {
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 100%;
+    width: 18vw;
+    height: 45vh;
     margin: 2% auto;
+  
+    &::before {
+      content: "Ecowax";
+      font-size: 50px;
+      font-family: "Edo", sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: rgba(0, 0, 0, 0.11);
+      display: flex;
+      justify-content: right;
+    }
+  
   }
   #div-img-product img {
     width: 100%;
@@ -134,45 +175,66 @@ a {
     justify-items: right;
     object-fit: fill;
     object-position: center;
-    transform: rotate(1deg);
+    transform: rotate(360deg);
   }
+  
+  
   .card-title {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     font-family: "Libre Baskerville", serif;
-    text-decoration: none;
+    box-shadow: 0 3px 4px 2px;
+    margin-top: 3%;
+    width: 80%;
   }
   .card-text {
     text-align: justify;
     font-family: "Libre Baskerville", serif;
     padding: 5px;
-    margin-top: 3px;
+    margin-top: 4%;
+    width: 80%;
+  
+    small{
+      display: flex;
+      justify-content: center;
+    }
   }
   a {
     text-decoration: none;
     color: #212529;
-
+  
     &:hover {
       text-decoration: none;
       color: #212529;
     }
   }
-
-  .price-div {
+  .bottom-component {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .price-div{
     display: flexbox;
     justify-content: center;
     align-items: center;
     margin: 3%;
-
+    transition: all 0.4s;
+    width: max-content;
+  
     button {
       background-color: #077c16;
       border-radius: 10px;
       transition: all 0.4s;
-
+  
       &:hover {
         transform: scale(1.1);
+        color: #fff;
         box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
       }
     }
-  }
-}
+  }}
