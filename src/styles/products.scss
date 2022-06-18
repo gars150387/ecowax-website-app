@@ -127,16 +127,19 @@ a {
   }
 }
 
-@media only screen and (max-width: 620px) {
+
+//SMALLER SCREEN STYLES//
+
+@media only screen and (max-width: 600px) {
   .card-container {
-    width: 60%;
+    width: 100%;
     height: 80%;
     margin: 2% auto;
   }
   
   .card {
-    width: 50%;
-    height: 50vh;
+    width: 95%;
+    height: 40vh;
     overflow: hidden;
     transition: all 0.5s;
     margin: 2% auto;
@@ -145,62 +148,118 @@ a {
     &:hover {
       width: 100%;
     }
+    &:hover #div-img-product{
+      width: 20%;
+      height: 20%;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+    }
+    
+    &:hover #div-img-product::before{
+      content: '';
+      width: 0%;
+      height: 0%;
+    }
+
+    &:hover #div-img-product img{
+      width: 30%;
+      height: 40%;
+      padding: 0 4%;
+      object-position: center;
+      object-fit: fill;
+      margin: 5% auto;
+      position: absolute;
+      top: 1%;
+      right: 2%;
   
+      background: linear-gradient(#4C6731, #fff);
+      transform: skew(0deg, 0deg);
+      box-shadow: 0 0 4px 5px rgba($color: #494848, $alpha: 0.5);
+    }
+
+    &:hover .card-title {
+      font-size: 15px;
+      text-align: center;
+      font-family: "Libre Baskerville", serif;
+      box-shadow: 0 3px 4px 2px;
+      width: 65%;
+      position: absolute;
+      top: 3%;
+      width: 60%;
+      opacity: 1;
+    }
+
+    &:hover .card-text{
+      width: 65%;
+      text-align: justify;
+      opacity: 1;
+    }
+
     &:hover .bottom-component {
       opacity: 1;
       transition: all 0.4s;
+      width: 90%;
+      margin-top: 5%;
     }
-  
-    &:hover #div-img-product::before{
-      content: '';
-    }
-  
   }
   
   #div-img-product {
     display: flex;
     justify-content: center;
-    width: 18vw;
-    height: 45vh;
+    width: 100%;
+    height: 50%;
     margin: 2% auto;
+    border-radius: 15px;
   
     &::before {
       content: "Ecowax";
-      font-size: 50px;
+      width: 60%;
+      font-size: 30px;
       font-family: "Edo", sans-serif;
       font-weight: 500;
       letter-spacing: 1px;
-      color: rgba(0, 0, 0, 0.11);
+      color: rgba(0, 0, 0, 0.2);
       display: flex;
       justify-content: right;
     }
   
   }
   #div-img-product img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
+    padding: 0 4%;
+    object-position: center;
+    object-fit: fill;
+    margin: 5% auto;
+    margin-right: 3%;
     display: flex;
     justify-items: right;
     object-fit: fill;
     object-position: center;
     transform: rotate(360deg);
+    background: #4C6731;
+  
   }
-  
-  
+
   .card-title {
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
     font-family: "Libre Baskerville", serif;
     box-shadow: 0 3px 4px 2px;
-    margin-top: 3%;
-    width: 80%;
+    width: 65%;
+    opacity: 0;
   }
   .card-text {
     text-align: justify;
     font-family: "Libre Baskerville", serif;
     padding: 5px;
-    margin-top: 4%;
+    margin-top: 2%;
     width: 80%;
+    font-size: 10px;
+    font-family: 'Edo', sans-serif;
+    opacity: 0;
+
   
     small{
       display: flex;
@@ -245,4 +304,5 @@ a {
         box-shadow: 0 0 4px 5px rgba($color: #686666, $alpha: 0.5);
       }
     }
-  }}
+  }
+}
