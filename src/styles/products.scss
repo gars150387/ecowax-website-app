@@ -25,6 +25,11 @@
     content: '';
   }
 
+  &:hover #div-img-product img{
+    background: linear-gradient(#4C6731, #fff);
+    transform: skew(0deg, 0deg);
+    box-shadow: 0 0 4px 5px rgba($color: #494848, $alpha: 0.5);
+  }
 }
 
 #div-img-product {
@@ -33,30 +38,33 @@
   width: 18vw;
   height: 45vh;
   margin: 2% auto;
-  background-color: #4C6731;
   border-radius: 15px;
 
   &::before {
     content: "Ecowax";
+    width: 60%;
     font-size: 50px;
     font-family: "Edo", sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.11);
+    color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: right;
   }
 
 }
 #div-img-product img {
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-items: right;
   object-fit: fill;
   object-position: center;
   transform: rotate(360deg);
+  background: #4C6731;
+
 }
+
 
 
 .card-title {
