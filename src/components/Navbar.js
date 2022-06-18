@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
 
 import "../styles/navbar.scss";
+import { CountdownPromotion } from "./Countdown";
 
 export const Navbar = () => {
 
@@ -29,6 +30,9 @@ export const Navbar = () => {
         >
           <h1>Ecowax</h1>
         </Link>
+      </div>
+      <div className="navbar__middle">
+        <CountdownPromotion />
       </div>
       <ul className="navbar__right">
         <li className="navbar__about navbar__item">
