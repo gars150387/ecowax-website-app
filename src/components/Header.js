@@ -7,7 +7,7 @@ import '../styles/header.scss'
 export const Header = () => {
     return (
         <div>
-            <img className='logo' src={require('../images/logo-no-background.png')} />
+            <img className='logo' src={require('../images/logo-no-background.png')} alt='header' />
             <div className='header-image container-fluid'></div>
         </div>
     )
