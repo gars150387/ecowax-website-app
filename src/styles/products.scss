@@ -261,7 +261,7 @@ a {
     opacity: 0;
 
   
-    small{
+    span{
       display: flex;
       justify-content: center;
     }
@@ -297,6 +297,7 @@ a {
       background-color: #077c16;
       border-radius: 10px;
       transition: all 0.4s;
+      color: #fff;
   
       &:hover {
         transform: scale(1.1);

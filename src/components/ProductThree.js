@@ -28,7 +28,7 @@ export const ProductThree = () => {
             </div>
             <div className="bottom-component">
                           <p className="card-text">
-                <small className="text-muted">Contenido: 500ml</small>
+                <span className="text-muted">Contenido: 500ml</span>
               </p>
               <a target="_blank" rel="noopener noreferrer"  href="https://api.whatsapp.com/send?phone=573245532889">
               <div className="price-div">

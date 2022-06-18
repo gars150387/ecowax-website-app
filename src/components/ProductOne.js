@@ -27,7 +27,7 @@ export const ProductOne = () => {
             </div>
             <div className="bottom-component">
               <p className="card-text">
-                <small className="text-muted">Contenido: 500ml</small>
+                <span className="text-muted">Contenido: 500ml</span>
               </p>
               <a
                 target="_blank"
