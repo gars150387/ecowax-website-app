@@ -52,7 +52,7 @@ const [show, setShow] = useState(true)
         <Modal.Body>
           <span>
             Te queremos invitar a unirte a nuestra comunidad, unete con tu
-            correo electronico y esta al tanto de todas nuestras ofertas!
+            correo electronico y estaras al tanto de todas nuestras ofertas!
           </span>
           <Form onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
