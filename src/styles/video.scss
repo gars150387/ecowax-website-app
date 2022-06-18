@@ -1,33 +1,57 @@
 @import "~video-react/styles/scss/video-react";
 
-.video-container{
-    width: 55%;
+.video-container {
+  width: 55%;
+  margin: 5% auto;
+}
+
+.video {
+  width: 95%;
+  height: 30%;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .video-features {
+    padding-top: 3%;
+  }
+
+  .video-container {
+    width: 100%;
     margin: 5% auto;
+    margin-top: 15%;
+  }
 
-}
-
-.video{
-    width: 95%;
+  .video {
+    width: 90%;
     height: 30%;
-    margin: 0 5px;
-}
+    margin: 0 auto;
+  }
 
+  .slick-next, .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    top: 105%;
+    width: 5%;
+    height: 20px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    outline: 0;
+    background: 0 0;
+  }
 
-@media only screen and (max-width: 600px){
-    .video-features{
-        padding-top: 3%;
-    }
-    
-    .video-container{
-        width: 88%;
-        margin: 5% auto;
-        margin-top: 15%;
-    
-    }
-    
-    .video{
-        width: 95%;
-        height: 30%;
-        margin: 0 5px;
-    }
+  .slick-prev{
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%, 0);
+    color: #4c4c4c;
+  }
+
+  .slick-next{
+    position: absolute;
+    right: 30%;
+    transform: translate(-30%, 0);
+    color: #4c4c4c;
+  }
 }
