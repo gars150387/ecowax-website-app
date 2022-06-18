@@ -1,4 +1,4 @@
-.logo{
+.logo {
   position: absolute;
   left: 35%;
   transition: all 0.3s;
@@ -20,7 +20,7 @@
   background: url("../images/background-image.jpg");
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
     position: absolute;
@@ -30,7 +30,6 @@
 
     &:hover {
       transition: all 0.3s;
-      // transform: scale(1.2);
     }
 
     &:hover ~ .header-image {
