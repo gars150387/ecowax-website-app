@@ -6,7 +6,6 @@ export const App = () => {
   return (
     <Router>
        <Home title='home' />
-       
     </Router>
   );
 };
