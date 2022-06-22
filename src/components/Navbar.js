@@ -4,7 +4,6 @@ import {FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF} from 'react-icons/fa'
 
 import "../styles/navbar.scss";
 import { CountdownPromotion } from "./Countdown";
-import { helper } from "./helper";
 
 export const Navbar = () => {
 
