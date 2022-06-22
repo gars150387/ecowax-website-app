@@ -20,12 +20,12 @@ const handleInstagramLink = (e) => {
 
 const handleTiktokLink = (e) => {
     e.preventDefault();
-    window.open("https://", "_blank");
+    window.open("https://www.tiktok.com/@ecowaxcolombia", "_blank");
   };
 
 const handleFacebookLink = (e) => {
     e.preventDefault();
-    window.open("https://", "_blank");
+    window.open("https://www.facebook.com/Ecowax-2580946118583233", "_blank");
   };
 
   return (
